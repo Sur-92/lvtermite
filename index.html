@@ -94,8 +94,8 @@
   .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:#00234f}
   .hero-bg{position:absolute;top:-20%;left:0;right:0;height:145%;z-index:0;will-change:transform;
     background:
-      linear-gradient(180deg,rgba(0,18,45,.9) 0%,rgba(0,33,74,.66) 40%,rgba(0,30,70,.78) 75%,rgba(3,42,91,.95) 100%),
-      url("img/termite-damage.jpg") center/cover no-repeat;}
+      linear-gradient(180deg,rgba(0,20,48,.82) 0%,rgba(0,34,76,.6) 42%,rgba(0,30,70,.74) 75%,rgba(3,42,91,.95) 100%),
+      url("img/house-b.jpg") center/cover no-repeat;}
   .hill-foreground{position:absolute;left:0;right:0;bottom:-1px;width:100%;line-height:0;z-index:3;pointer-events:none}
   .hero-content{position:relative;z-index:5;width:min(92%,var(--wrap));margin-inline:auto;padding:9rem 0 12rem;color:#fff}
   .hero-badge{
@@ -156,10 +156,21 @@
     text-shadow:0 3px 26px rgba(0,0,0,.35);margin-bottom:.3em}
   .parallax .creed-sub{font-size:1.05rem;letter-spacing:.28em;text-transform:uppercase;color:#ffe7bd;margin-bottom:1.2rem}
   .parallax p.creed-body{max-width:52ch;margin:0 auto;color:#dbe7fb;font-size:1.12rem}
-  .parallax.has-photo{
-    background-image:linear-gradient(180deg,rgba(0,25,63,.9),rgba(0,42,95,.86)),url("img/house-b.jpg");
-    background-size:cover;background-position:center;
-  }
+  /* ---------- PEST WATCH ---------- */
+  .watch-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+  .watch-card{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:14px;
+    padding:1.6rem 1.7rem;box-shadow:0 10px 30px -24px rgba(0,49,110,.5);transition:transform .2s ease,box-shadow .2s ease}
+  .watch-card:hover{transform:translateY(-4px);box-shadow:0 22px 44px -26px rgba(0,49,110,.55)}
+  .watch-card .ico{width:46px;height:46px;border-radius:11px;background:linear-gradient(135deg,#e9f1ff,#d5e6ff);
+    display:flex;align-items:center;justify-content:center;color:var(--blue);margin-bottom:.9rem}
+  .watch-card h3{font-size:1.12rem;margin-bottom:.35em}
+  .watch-card p{color:var(--muted);font-size:.97rem;margin-bottom:0}
+  .watch-note{margin-top:1.5rem;background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#eaf1fc;
+    border-radius:16px;padding:1.6rem 1.9rem;font-size:1.06rem;box-shadow:var(--shadow)}
+  .watch-note strong{color:#fff}
+  .watch-note a{color:#ffe7bd;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+  .watch-note .src{display:block;margin-top:.8rem;font-size:.8rem;color:#a9c4ec;font-style:italic}
+  @media(max-width:760px){.watch-grid{grid-template-columns:1fr}}
   .keystone-watermark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.06;pointer-events:none}
   .keystone-watermark svg{width:min(70vw,640px);height:auto}
 
@@ -172,7 +183,7 @@
   .why-list h3{font-size:1.1rem;margin-bottom:.2em}
   .why-list p{color:var(--muted);margin-bottom:0;font-size:.98rem}
   .why-visual{position:relative;border-radius:24px;overflow:hidden;min-height:440px;box-shadow:var(--shadow);
-    background:linear-gradient(180deg,rgba(0,30,68,.2),rgba(0,26,60,.24) 55%,rgba(0,20,50,.66)),url("img/termite.jpg") center/cover no-repeat;}
+    background:linear-gradient(180deg,rgba(0,30,68,.28),rgba(0,26,60,.3) 55%,rgba(0,20,50,.72)),url("img/termite-damage.jpg") center/cover no-repeat;}
   .why-visual .badge-chip{position:absolute;top:1.1rem;left:1.1rem;width:66px;height:66px;background:#fff;
     border-radius:14px;padding:6px;box-shadow:0 12px 26px -10px rgba(0,0,0,.55);z-index:2}
   .why-visual .badge-chip img{width:100%;height:100%;object-fit:contain}
@@ -279,6 +290,7 @@
   <nav class="links" id="menu">
     <a class="navlink" href="#services">Services</a>
     <a class="navlink" href="#why">Why Us</a>
+    <a class="navlink" href="#pestwatch">Pest Watch</a>
     <a class="navlink" href="#area">Service Area</a>
     <a class="navlink" href="#contact">Contact</a>
     <a class="btn btn-blue nav-phone" href="tel:+17179268703">Call (717) 926-8703</a>
@@ -410,14 +422,41 @@
   </div>
 </section>
 
-<!-- ============ STATS PARALLAX ============ -->
-<section class="parallax has-photo">
-  <div class="wrap reveal">
-    <div class="stats">
-      <div class="stat"><b>1994</b><span>Established</span></div>
-      <div class="stat"><b>30+</b><span>Years Protecting Homes</span></div>
-      <div class="stat"><b>VA·FHA</b><span>Certified Inspections</span></div>
-      <div class="stat"><b>100%</b><span>Locally Owned</span></div>
+<!-- ============ LEBANON VALLEY PEST WATCH ============ -->
+<section class="block" id="pestwatch">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Lebanon Valley Pest Watch · 2026</span>
+      <h2>What's Actually Pressuring Homes Here Right Now</h2>
+      <p>Skip the scare stories. Here's the honest, local picture for the Lebanon Valley this year — and what it means for your home.</p>
+    </div>
+
+    <div class="watch-grid">
+      <article class="watch-card reveal">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7"/><path d="M5 9v11h14V9"/><path d="M3 20h18"/><path d="M9 20v-4h6v4"/></svg></div>
+        <h3>A dry year drives termites to your foundation</h3>
+        <p>The eastern subterranean termite is the one that costs real money here — and drought doesn't slow it down, it concentrates it. Colonies chase dependable moisture: downspouts, hose bibs, crawlspaces, and watered beds against the house. This is the summer to walk your foundation lines and fix grading and drainage.</p>
+      </article>
+      <article class="watch-card reveal">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18l5-5 3 3 7-8"/><path d="M20 8v5"/><path d="M20 8h-5"/></svg></div>
+        <h3>It's the quiet pests, not the headlines</h3>
+        <p>The spotted lanternfly everyone panicked about is down more than 90% across our region. The steady threat underneath is the unglamorous one: subterranean termites and carpenter ants working through older local housing stock — usually in damp, poorly-drained wood.</p>
+      </article>
+      <article class="watch-card reveal">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1.5 3 1.5 5 0 6-1.5-1-1.5-3 0-6z"/><path d="M12 9v11"/><path d="M9 20h6"/><path d="M12 12c-3-2-6-2-8-1"/><path d="M12 12c3-2 6-2 8-1"/></svg></div>
+        <h3>An elevated mosquito &amp; West Nile summer</h3>
+        <p>Dry summers favor the house mosquito that carries West Nile, and vector counts are already up locally. Empty anything holding standing water weekly — clogged gutters, buckets, plant saucers, tarps, and forgotten containers around the yard.</p>
+      </article>
+      <article class="watch-card reveal">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="13" rx="4" ry="5"/><path d="M12 8V5"/><path d="M8 11L5 9"/><path d="M16 11l3-2"/><path d="M8 15l-3 2"/><path d="M16 15l3 2"/></svg></div>
+        <h3>Ticks &amp; Lyme stay a year-round risk</h3>
+        <p>Pennsylvania leads the country for Lyme disease, and the blacklegged (deer) tick is in every county. If your property backs to woods or a field edge, keep the lawn trimmed, clear leaf litter, and hold a mulch or gravel buffer between the tree line and where kids and pets play.</p>
+      </article>
+    </div>
+
+    <div class="watch-note reveal">
+      <strong>The thread tying it together:</strong> where water is scarce this year, the pests that need it relocate to the man-made moisture around your buildings — exactly where you don't want them. That makes summer 2026 a smart time for a foundation-to-eaves once-over. <a href="#contact">We'll take a look — free.</a>
+      <span class="src">Local conditions per Penn State Extension and PA DEP / county mosquito &amp; tick programs.</span>
     </div>
   </div>
 </section>
