@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lebanon Valley Termite &amp; Pest Control Co., Inc. — Serving Lebanon County Since 1994</title>
+<meta name="description" content="Lebanon Valley Termite &amp; Pest Control — locally owned since 1994. Termite treatment, general pest control, rodent control, and VA &amp; FHA certified real-estate inspections across Lebanon County, PA.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M20 15 L80 20 L85 60 L50 88 L15 62 Z' fill='%230049AF'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --blue:#0049AF;
+    --blue-mid:#0e57bd;
+    --blue-dark:#00306e;
+    --blue-darker:#001f47;
+    --amber:#F5A623;
+    --amber-dark:#d98b12;
+    --ink:#132338;
+    --muted:#5b6b80;
+    --bg:#ffffff;
+    --bg-alt:#f3f7fc;
+    --line:#e2e9f2;
+    --shadow:0 18px 45px -18px rgba(0,49,110,.35);
+    --radius:16px;
+    --wrap:1160px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{line-height:1.1;margin:0 0 .5em;font-weight:800;letter-spacing:-.01em}
+  p{margin:0 0 1em}
+  a{color:var(--blue);text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:min(92%,var(--wrap));margin-inline:auto}
+  .eyebrow{
+    display:inline-block;text-transform:uppercase;letter-spacing:.18em;
+    font-size:.78rem;font-weight:800;color:var(--amber-dark);margin-bottom:.9rem;
+  }
+  .eyebrow.light{color:#bcd4ff}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55em;justify-content:center;
+    padding:.9em 1.5em;border-radius:999px;font-weight:800;font-size:1rem;
+    letter-spacing:.01em;cursor:pointer;border:2px solid transparent;
+    transition:transform .15s ease,box-shadow .2s ease,background .2s ease,color .2s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-amber{background:var(--amber);color:#3a2600;box-shadow:0 10px 24px -8px rgba(245,166,35,.7)}
+  .btn-amber:hover{background:#ffb733}
+  .btn-white{background:#fff;color:var(--blue);box-shadow:var(--shadow)}
+  .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}
+  .btn-outline:hover{background:#fff;color:var(--blue);border-color:#fff}
+  .btn-blue{background:var(--blue);color:#fff;box-shadow:var(--shadow)}
+  .btn-blue:hover{background:var(--blue-mid)}
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;padding:.7rem clamp(1rem,4vw,2.4rem);
+    transition:background .3s ease,box-shadow .3s ease,padding .3s ease;
+  }
+  header.nav.solid{background:rgba(255,255,255,.96);box-shadow:0 6px 24px -12px rgba(0,49,110,.4);backdrop-filter:saturate(1.4) blur(6px)}
+  .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;letter-spacing:.01em}
+  .brand .mark{
+    width:44px;height:44px;border-radius:10px;background:#fff;padding:4px;
+    box-shadow:0 6px 16px -6px rgba(0,0,0,.35);flex:none;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .brand .mark img{width:100%;height:100%;object-fit:contain}
+  .brand .txt{color:#fff;font-size:.98rem;line-height:1.15;transition:color .3s ease}
+  .brand .txt small{display:block;font-weight:600;font-size:.72rem;opacity:.8;letter-spacing:.02em}
+  header.nav.solid .brand .txt{color:var(--ink)}
+  nav.links{display:flex;align-items:center;gap:1.6rem}
+  nav.links a.navlink{color:#fff;font-weight:600;font-size:.95rem;transition:color .3s ease;position:relative}
+  header.nav.solid nav.links a.navlink{color:var(--ink)}
+  nav.links a.navlink::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--amber);transition:width .2s ease}
+  nav.links a.navlink:hover::after{width:100%}
+  nav.links a.navlink:hover{color:var(--amber)}
+  header.nav.solid nav.links a.navlink:hover{color:var(--amber-dark)}
+  .nav-phone{font-size:.95rem;padding:.6em 1.1em}
+  .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:.4rem;flex:none}
+  .menu-btn span{display:block;width:26px;height:3px;background:#fff;border-radius:2px;margin:5px 0;transition:.3s}
+  header.nav.solid .menu-btn span{background:var(--ink)}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:#00234f}
+  .hero-bg{position:absolute;top:-20%;left:0;right:0;height:145%;z-index:0;will-change:transform;
+    background:
+      linear-gradient(180deg,rgba(0,18,45,.88) 0%,rgba(0,35,78,.5) 40%,rgba(0,30,70,.72) 75%,rgba(3,42,91,.94) 100%),
+      url("img/house-a.jpg") center/cover no-repeat;}
+  .hill-foreground{position:absolute;left:0;right:0;bottom:-1px;width:100%;line-height:0;z-index:3;pointer-events:none}
+  .hero-content{position:relative;z-index:5;width:min(92%,var(--wrap));margin-inline:auto;padding:9rem 0 12rem;color:#fff}
+  .hero-badge{
+    width:132px;height:132px;background:#fff;border-radius:22px;padding:12px;
+    box-shadow:0 26px 60px -20px rgba(0,0,0,.6);margin-bottom:1.6rem;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .hero-badge img{width:100%;height:100%;object-fit:contain}
+  .hero h1{font-size:clamp(2.3rem,6vw,4.3rem);text-transform:uppercase;letter-spacing:-.015em;max-width:15ch;margin-bottom:.35em;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+  .hero .lede{font-size:clamp(1.05rem,2.4vw,1.4rem);max-width:44ch;color:#dbe7fb;margin-bottom:.4em}
+  .tagline-chip{display:inline-flex;align-items:center;gap:.6em;font-style:italic;font-weight:600;
+    color:#ffe7bd;border:1px solid rgba(255,231,189,.4);padding:.4em 1em;border-radius:999px;
+    font-size:.95rem;margin:.6rem 0 1.8rem;background:rgba(255,255,255,.06)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:.4rem}
+  .scroll-cue{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);z-index:5;color:#cfe0fb;
+    font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;text-align:center;animation:bob 2.4s ease-in-out infinite}
+  .scroll-cue svg{margin:.4rem auto 0;display:block}
+  @keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+  /* ---------- TRUST STRIP ---------- */
+  .trust{background:var(--blue);color:#fff;position:relative;z-index:6}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.5rem 0}
+  .trust .item{display:flex;align-items:center;gap:.75rem;justify-content:center;text-align:left}
+  .trust .item svg{flex:none;color:var(--amber)}
+  .trust .item b{display:block;font-size:1rem;line-height:1.15}
+  .trust .item span{font-size:.82rem;color:#c4d6f5}
+  .trust .item div{min-width:0}
+
+  /* ---------- SECTION SHELL ---------- */
+  section.block{padding:clamp(4rem,9vw,7.5rem) 0;position:relative}
+  .section-head{max-width:640px;margin-bottom:3rem}
+  .section-head.center{margin-inline:auto;text-align:center}
+  .section-head h2{font-size:clamp(1.9rem,4.5vw,3rem);text-transform:uppercase}
+  .section-head p{color:var(--muted);font-size:1.12rem;margin-bottom:0}
+  .bg-alt{background:var(--bg-alt)}
+
+  /* ---------- SERVICES ---------- */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.7rem;
+    box-shadow:0 10px 30px -22px rgba(0,49,110,.5);transition:transform .2s ease,box-shadow .2s ease,border-color .2s;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(0,49,110,.55);border-color:#cfe0fb}
+  .card .ico{width:58px;height:58px;border-radius:14px;background:linear-gradient(135deg,#e9f1ff,#d5e6ff);
+    display:flex;align-items:center;justify-content:center;color:var(--blue);margin-bottom:1.1rem}
+  .card h3{font-size:1.22rem}
+  .card p{color:var(--muted);font-size:.98rem;margin-bottom:0}
+
+  /* ---------- PARALLAX BANDS ---------- */
+  .parallax{
+    position:relative;color:#fff;text-align:center;
+    padding:clamp(5rem,12vw,9rem) 0;overflow:hidden;
+    background:linear-gradient(180deg,rgba(0,25,63,.86),rgba(0,49,110,.9)),
+      radial-gradient(circle at 20% 20%,#0b57bd,#00204c 70%);
+    background-attachment:fixed;background-size:cover;background-position:center;
+  }
+  .parallax .creed{font-size:clamp(1.8rem,5vw,3.4rem);font-style:italic;font-weight:800;letter-spacing:.01em;
+    text-shadow:0 3px 26px rgba(0,0,0,.35);margin-bottom:.3em}
+  .parallax .creed-sub{font-size:1.05rem;letter-spacing:.28em;text-transform:uppercase;color:#ffe7bd;margin-bottom:1.2rem}
+  .parallax p.creed-body{max-width:52ch;margin:0 auto;color:#dbe7fb;font-size:1.12rem}
+  .parallax.has-photo{
+    background-image:linear-gradient(180deg,rgba(0,25,63,.9),rgba(0,42,95,.86)),url("img/countryside.jpg");
+    background-size:cover;background-position:center;
+  }
+  .keystone-watermark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.06;pointer-events:none}
+  .keystone-watermark svg{width:min(70vw,640px);height:auto}
+
+  /* ---------- WHY US ---------- */
+  .why-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+  .why-list{list-style:none;padding:0;margin:0;display:grid;gap:1.3rem}
+  .why-list li{display:flex;gap:1rem}
+  .why-list .tick{flex:none;width:40px;height:40px;border-radius:12px;background:var(--blue);color:#fff;
+    display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+  .why-list h3{font-size:1.1rem;margin-bottom:.2em}
+  .why-list p{color:var(--muted);margin-bottom:0;font-size:.98rem}
+  .why-visual{position:relative;border-radius:24px;overflow:hidden;min-height:440px;box-shadow:var(--shadow);
+    background:linear-gradient(180deg,rgba(0,30,68,.12),rgba(0,26,60,.15) 55%,rgba(0,26,60,.62)),url("img/house-b.jpg") center/cover no-repeat;}
+  .why-visual .badge-chip{position:absolute;top:1.1rem;left:1.1rem;width:66px;height:66px;background:#fff;
+    border-radius:14px;padding:6px;box-shadow:0 12px 26px -10px rgba(0,0,0,.55);z-index:2}
+  .why-visual .badge-chip img{width:100%;height:100%;object-fit:contain}
+  .why-visual .ribbon{position:absolute;bottom:0;left:0;right:0;padding:1.2rem;text-align:center;
+    background:linear-gradient(180deg,rgba(0,20,50,0),rgba(0,18,46,.82));color:#fff;font-style:italic;font-weight:700;letter-spacing:.02em}
+
+  /* ---------- STATS ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;text-align:center}
+  .stat b{display:block;font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800;color:#fff;line-height:1}
+  .stat span{color:#cfe0fb;font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+
+  /* ---------- SERVICE AREA ---------- */
+  .area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  .towns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+  .towns span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.45em 1em;font-size:.92rem;
+    font-weight:600;color:var(--blue-dark);box-shadow:0 6px 16px -12px rgba(0,49,110,.6)}
+  .area-map{position:relative;display:flex;align-items:center;justify-content:center}
+  .area-map svg{width:100%;max-width:460px;height:auto;filter:drop-shadow(0 24px 40px rgba(0,49,110,.25))}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+  .contact-info .line{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem 0;border-bottom:1px solid var(--line)}
+  .contact-info .line:last-child{border-bottom:0}
+  .contact-info .ico{flex:none;width:46px;height:46px;border-radius:12px;background:#e9f1ff;color:var(--blue);
+    display:flex;align-items:center;justify-content:center}
+  .contact-info b{display:block;font-size:1.05rem}
+  .contact-info a{font-weight:700}
+  .contact-info span{color:var(--muted);font-size:.95rem}
+  form.quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:var(--shadow)}
+  form.quote h3{font-size:1.4rem;text-transform:uppercase}
+  form.quote p.small{color:var(--muted);font-size:.92rem;margin-bottom:1.4rem}
+  .field{margin-bottom:1rem}
+  .field label{display:block;font-weight:700;font-size:.85rem;margin-bottom:.35rem;letter-spacing:.02em}
+  .field input,.field select,.field textarea{
+    width:100%;padding:.8em .9em;border:1.5px solid var(--line);border-radius:10px;font:inherit;color:var(--ink);
+    background:#fbfdff;transition:border-color .2s,box-shadow .2s;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--blue);box-shadow:0 0 0 3px rgba(0,73,175,.15)}
+  .field textarea{resize:vertical;min-height:96px}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+  form.quote .btn{width:100%;margin-top:.4rem}
+  .form-note{font-size:.82rem;color:var(--muted);text-align:center;margin:.8rem 0 0}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--blue-darker);color:#c4d6f5;padding:3.5rem 0 2rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.12)}
+  .foot-brand{display:flex;gap:1rem;align-items:flex-start}
+  .foot-brand .mark{width:64px;height:64px;background:#fff;border-radius:12px;padding:6px;flex:none}
+  .foot-brand .mark img{width:100%;height:100%;object-fit:contain}
+  .foot-brand b{color:#fff;font-size:1.15rem;display:block;line-height:1.2}
+  .foot-brand em{color:#ffe7bd;font-size:.9rem}
+  footer h4{color:#fff;text-transform:uppercase;letter-spacing:.1em;font-size:.85rem;margin:0 0 1rem}
+  footer ul{list-style:none;padding:0;margin:0;display:grid;gap:.5rem}
+  footer ul a{color:#c4d6f5}
+  footer ul a:hover{color:#fff}
+  .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding-top:1.6rem;font-size:.85rem}
+  .foot-bottom .creed{color:#ffe7bd;font-style:italic}
+
+  /* ---------- REVEAL ANIMATION ---------- */
+  .js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .js .reveal.in{opacity:1;transform:none}
+
+  /* ---------- MOBILE ---------- */
+  @media(max-width:900px){
+    .cards{grid-template-columns:1fr 1fr}
+    .why-grid,.area-grid,.contact-grid{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr 1fr;gap:1.2rem}
+    .why-visual{min-height:300px;order:-1}
+    .stats{grid-template-columns:1fr 1fr;gap:2rem}
+  }
+  @media(max-width:640px){
+    nav.links{position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:#fff;flex-direction:column;
+      align-items:flex-start;justify-content:flex-start;gap:.4rem;padding:5.5rem 1.8rem 2rem;
+      transform:translateX(105%);transition:transform .32s ease;box-shadow:-20px 0 60px -30px rgba(0,0,0,.5);z-index:55}
+    nav.links.open{transform:translateX(0)}
+    nav.links a.navlink{color:var(--ink);width:100%;padding:.6rem 0;border-bottom:1px solid var(--line)}
+    nav.links .nav-phone{margin-top:1rem;width:100%}
+    .menu-btn{display:block;z-index:70}
+    header.nav .brand .txt small{display:none}
+    .cards{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    .row2{grid-template-columns:1fr}
+    .hero-content{padding:8rem 0 9rem}
+    /* fixed backgrounds jank on iOS — fall back to scroll */
+    .parallax{background-attachment:scroll}
+  }
+  @media(hover:none){.parallax{background-attachment:scroll}}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .scroll-cue{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<script>document.documentElement.className += ' js';</script>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Lebanon Valley Termite and Pest Control home">
+    <span class="mark"><img src="logo.jpg" alt="Lebanon Valley Termite &amp; Pest Control logo"></span>
+    <span class="txt">Lebanon Valley Termite<small>&amp; Pest Control Co., Inc.</small></span>
+  </a>
+  <nav class="links" id="menu">
+    <a class="navlink" href="#services">Services</a>
+    <a class="navlink" href="#why">Why Us</a>
+    <a class="navlink" href="#area">Service Area</a>
+    <a class="navlink" href="#contact">Contact</a>
+    <a class="btn btn-blue nav-phone" href="tel:+17179268703">Call (717) 926-8703</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg" data-parallax data-speed="0.2"></div>
+  <div class="hill-foreground" aria-hidden="true">
+    <svg viewBox="0 0 1440 200" preserveAspectRatio="none" style="width:100%;height:auto"><path d="M0,120 C280,60 520,150 820,110 C1080,74 1260,150 1440,96 L1440,200 L0,200 Z" fill="#052a5b"/></svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge"><img src="logo.jpg" alt="Lebanon Valley Termite &amp; Pest Control Co., Inc."></div>
+    <span class="tagline-chip">✦ Semper Dei Gloriam</span>
+    <h1>Guarding Lebanon Valley Homes Since 1994</h1>
+    <p class="lede">Locally owned, honest termite &amp; pest control — from real-estate inspections to year-round protection for your home.</p>
+    <div class="hero-cta">
+      <a class="btn btn-amber" href="tel:+17179268703">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg>
+        Call (717) 926-8703
+      </a>
+      <a class="btn btn-outline" href="#contact">Request a Free Inspection</a>
+    </div>
+  </div>
+
+  <a class="scroll-cue" href="#services" aria-label="Scroll to services">Explore
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+  </a>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z"/></svg><div><b>Est. 1994</b><span>30+ years local</span></div></div>
+    <div class="item"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4zm-1 13l6-6-1.4-1.4L11 12.2 8.4 9.6 7 11l4 4z"/></svg><div><b>Licensed &amp; Insured</b><span>PA certified</span></div></div>
+    <div class="item"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v3H4zM4 9h16v11H4zm3 3v5h4v-5zm7 0v2h4v-2zm0 3v2h4v-2z"/></svg><div><b>VA &amp; FHA</b><span>Certified inspections</span></div></div>
+    <div class="item"><svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a5 5 0 015 5c0 3.9-5 11-5 11S7 10.9 7 7a5 5 0 015-5zm0 3a2 2 0 100 4 2 2 0 000-4z"/></svg><div><b>Locally Owned</b><span>Lebanon County</span></div></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What We Do</span>
+      <h2>Complete Termite &amp; Pest Protection</h2>
+      <p>From the wood in your walls to the pests at your door, we handle it with proven treatments and straight answers — never a hard sell.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-.6 2-2 3-2 5 0 1.1.9 2 2 2s2-.9 2-2c0-2-1.4-3-2-5zM7 9c-1.7.6-3 1.7-3 3.5 0 1 .8 1.9 1.8 1.9.9 0 1.6-.6 1.9-1.4L10 14v6h4v-6l2.3-1c.3.8 1 1.4 1.9 1.4 1 0 1.8-.9 1.8-1.9C20 10.7 18.7 9.6 17 9l-2 .9V9a3 3 0 00-6 0v.9L7 9z"/></svg></div>
+        <h3>Termite Control</h3>
+        <p>Traditional liquid treatments and modern baiting systems that stop termite colonies before they cost you the house.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a4 4 0 014 4v1h2v2h-2.2a4 4 0 01.2 1.3V13h2v2h-2v.7A4 4 0 0112 20a4 4 0 01-4-4.3V15H6v-2h2v-1.7A4 4 0 018.2 11H6V9h2V7a4 4 0 014-4zm0 5a1.5 1.5 0 00-1.5 1.5v6a1.5 1.5 0 003 0v-6A1.5 1.5 0 0012 8z"/></svg></div>
+        <h3>General Pest Control</h3>
+        <p>Ants, spiders, roaches, stinging insects and the seasonal invaders common to Lebanon Valley — handled fast.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17 8a4 4 0 00-4-4c-2 0-3 1-4 1S7 4 6 5c-2 2-3 5-3 8a4 4 0 004 4h8a4 4 0 004-4c0-1.3-.4-2.5-1-3.5l2-1.5-3-.5zM8 12a1 1 0 110-2 1 1 0 010 2z"/></svg></div>
+        <h3>Rodent Control</h3>
+        <p>Mice and rats find their way in every fall. We locate entry points, remove the problem, and help keep them out.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8zm0 3h8v1.5H8zm0-6h4v1.5H8z"/></svg></div>
+        <h3>Real-Estate Inspections</h3>
+        <p>Wood-destroying insect (WDI) reports and certificates for home sales — <strong>VA &amp; FHA certified</strong> and buyer-ready.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M4 20V10l8-6 8 6v10h-6v-6h-4v6H4zm8-13.5L7 10v.5h10V10l-5-3.5z"/></svg></div>
+        <h3>Baiting Systems</h3>
+        <p>Discreet in-ground bait stations that monitor and eliminate termite activity around your home's perimeter, all year.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l3 3 4-1-1 4 3 3-3 3 1 4-4-1-3 3-3-3-4 1 1-4-3-3 3-3-1-4 4 1 3-3zm0 5a6 6 0 100 12 6 6 0 000-12zm-1 8.4l-2.7-2.7L9.7 10 11 11.3 14.3 8l1.4 1.4L11 14.4z"/></svg></div>
+        <h3>Preventive Programs</h3>
+        <p>Scheduled evaluations and treatments that catch trouble early — the honest, cost-saving way to protect a home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARALLAX CREED ============ -->
+<section class="parallax">
+  <div class="keystone-watermark" aria-hidden="true">
+    <svg viewBox="0 0 400 300"><path d="M60 40 L340 55 L360 210 L200 275 L45 205 Z" fill="#ffffff"/></svg>
+  </div>
+  <div class="wrap reveal">
+    <div class="creed-sub">Our Standard Since Day One</div>
+    <p class="creed">"Semper Dei Gloriam"</p>
+    <p class="creed-body">Everything we do — every inspection, every treatment, every honest recommendation — we do to the glory of God. That's more than a motto on our logo; it's the standard we hold ourselves to on your property.</p>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="block" id="why">
+  <div class="wrap why-grid">
+    <div class="reveal">
+      <span class="eyebrow">Why Neighbors Call Us</span>
+      <h2 style="font-size:clamp(1.9rem,4.5vw,3rem);text-transform:uppercase">A Local Name You Can Actually Trust</h2>
+      <p style="color:var(--muted);font-size:1.1rem;margin-bottom:2rem">We've protected Lebanon Valley homes for three decades. We show up, we tell you the truth, and we treat your home the way we'd treat our own.</p>
+      <ul class="why-list">
+        <li>
+          <span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+          <div><h3>30+ Years, Same Community</h3><p>Founded in 1994 and locally owned — we're your neighbors, not a national call center.</p></div>
+        </li>
+        <li>
+          <span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+          <div><h3>Honest Assessments</h3><p>If you don't need a treatment, we'll tell you. No scare tactics, no upselling — just straight answers.</p></div>
+        </li>
+        <li>
+          <span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+          <div><h3>Certified for Home Sales</h3><p>VA &amp; FHA certified WDI inspections and certificates that keep your closing on schedule.</p></div>
+        </li>
+        <li>
+          <span class="tick"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+          <div><h3>Proven Treatments</h3><p>Traditional and baiting-system approaches, matched to your home instead of a one-size-fits-all package.</p></div>
+        </li>
+      </ul>
+    </div>
+    <div class="why-visual reveal">
+      <span class="badge-chip"><img src="logo.jpg" alt="Lebanon Valley Termite &amp; Pest Control logo"></span>
+      <div class="ribbon">Family values. Honest work.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS PARALLAX ============ -->
+<section class="parallax has-photo">
+  <div class="wrap reveal">
+    <div class="stats">
+      <div class="stat"><b>1994</b><span>Established</span></div>
+      <div class="stat"><b>30+</b><span>Years Protecting Homes</span></div>
+      <div class="stat"><b>VA·FHA</b><span>Certified Inspections</span></div>
+      <div class="stat"><b>100%</b><span>Locally Owned</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section class="block bg-alt" id="area">
+  <div class="wrap area-grid">
+    <div class="area-map reveal" aria-hidden="true">
+      <svg viewBox="0 0 400 320">
+        <defs><linearGradient id="ksg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#0e57bd"/><stop offset="1" stop-color="#00306e"/></linearGradient></defs>
+        <path d="M70 55 L330 40 L360 200 L200 290 L45 205 Z" fill="url(#ksg)"/>
+        <path d="M70 55 L330 40 L360 200 L200 290 L45 205 Z" fill="none" stroke="#ffe7bd" stroke-width="3" opacity=".55"/>
+        <circle cx="205" cy="150" r="10" fill="#F5A623"/>
+        <circle cx="205" cy="150" r="20" fill="none" stroke="#F5A623" stroke-width="2" opacity=".6"/>
+        <circle cx="205" cy="150" r="30" fill="none" stroke="#F5A623" stroke-width="1.5" opacity=".35"/>
+        <text x="205" y="235" text-anchor="middle" fill="#fff" font-size="19" font-weight="800" font-family="Arial" letter-spacing="1">LEBANON</text>
+        <text x="205" y="256" text-anchor="middle" fill="#cfe0fb" font-size="12" font-family="Arial" letter-spacing="3">COUNTY, PA</text>
+      </svg>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Where We Work</span>
+      <h2 style="font-size:clamp(1.9rem,4.5vw,3rem);text-transform:uppercase">Proudly Serving Lebanon County &amp; Beyond</h2>
+      <p style="color:var(--muted);font-size:1.1rem">Based right here in the Lebanon Valley, we cover the city of Lebanon and the surrounding communities across the county and nearby areas.</p>
+      <div class="towns">
+        <span>Lebanon</span><span>Annville</span><span>Palmyra</span><span>Cornwall</span>
+        <span>Myerstown</span><span>Jonestown</span><span>Cleona</span><span>Richland</span>
+        <span>Schaefferstown</span><span>Fredericksburg</span><span>Campbelltown</span><span>Mt. Gretna</span>
+        <span>Newmanstown</span><span>+ surrounding areas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="block" id="contact">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Request Your Free Inspection</h2>
+      <p>Call now or send a few details and we'll get right back to you with a plan and an honest estimate.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="line">
+          <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1.1L6.6 10.8z"/></svg></span>
+          <div><span>Call or text</span><b><a href="tel:+17179268703">(717) 926-8703</a></b></div>
+        </div>
+        <div class="line">
+          <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a1 1 0 011 1v14a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1zm8 7L5.2 6.5A1 1 0 004 7.4V8l8 5 8-5v-.6a1 1 0 00-1.2-.9L12 11z"/></svg></span>
+          <div><span>Email us</span><b><a href="mailto:lvtermite@comcast.net">lvtermite@comcast.net</a></b></div>
+        </div>
+        <div class="line">
+          <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7zm0 4.5A2.5 2.5 0 1012 11.5 2.5 2.5 0 0012 6.5z"/></svg></span>
+          <div><span>Service area</span><b>Lebanon County &amp; surrounding communities, PA</b></div>
+        </div>
+        <div class="line">
+          <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10V6h-2v7l5 3 1-1.7-4-2.3z"/></svg></span>
+          <div><span>Hours</span><b>Mon–Fri, 8am–5pm</b><span>Calls returned promptly</span></div>
+        </div>
+      </div>
+
+      <form class="quote reveal" id="quoteForm">
+        <h3>Request an Inspection</h3>
+        <p class="small">Fill this out and your email app will open with the details ready to send. Or just call us — we're happy to talk it through.</p>
+        <div class="field">
+          <label for="q-name">Your Name</label>
+          <input id="q-name" name="name" type="text" placeholder="Jane Homeowner" required>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="q-phone">Phone</label>
+            <input id="q-phone" name="phone" type="tel" placeholder="(717) 555-0123" required>
+          </div>
+          <div class="field">
+            <label for="q-email">Email</label>
+            <input id="q-email" name="email" type="email" placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="q-town">Town</label>
+            <input id="q-town" name="town" type="text" placeholder="Annville">
+          </div>
+          <div class="field">
+            <label for="q-service">I need help with</label>
+            <select id="q-service" name="service">
+              <option>Termite inspection / treatment</option>
+              <option>General pest control</option>
+              <option>Rodent control</option>
+              <option>Real-estate (VA/FHA) inspection</option>
+              <option>Not sure — please advise</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="q-msg">Tell us what's going on</label>
+          <textarea id="q-msg" name="message" placeholder="Where you're seeing the problem, when it started, anything helpful…"></textarea>
+        </div>
+        <button class="btn btn-amber" type="submit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+          Send My Request
+        </button>
+        <p class="form-note">Prefer to call? <a href="tel:+17179268703">(717) 926-8703</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="mark"><img src="logo.jpg" alt="Lebanon Valley Termite &amp; Pest Control Co., Inc. logo"></span>
+        <div>
+          <b>Lebanon Valley Termite<br>&amp; Pest Control Co., Inc.</b>
+          <em>Semper Dei Gloriam</em>
+          <p style="margin:.6rem 0 0;font-size:.9rem">Protecting Lebanon Valley homes since 1994.</p>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Termite Control</a></li>
+          <li><a href="#services">General Pest Control</a></li>
+          <li><a href="#services">Rodent Control</a></li>
+          <li><a href="#services">Real-Estate Inspections</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+17179268703">(717) 926-8703</a></li>
+          <li><a href="mailto:lvtermite@comcast.net">lvtermite@comcast.net</a></li>
+          <li>Lebanon County, PA</li>
+          <li>Mon–Fri, 8am–5pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Lebanon Valley Termite &amp; Pest Control Co., Inc. · All rights reserved.</span>
+      <span class="creed">Semper Dei Gloriam</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* --- Sticky nav state --- */
+  var nav = document.getElementById("nav");
+  function onScroll(){
+    if(window.scrollY > 60){ nav.classList.add("solid"); }
+    else { nav.classList.remove("solid"); }
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* --- Mobile menu --- */
+  var menuBtn = document.getElementById("menuBtn");
+  var menu = document.getElementById("menu");
+  menuBtn.addEventListener("click", function(){
+    var open = menu.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){ menu.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); }
+  });
+
+  /* --- Hero parallax (rAF, transform-based) --- */
+  var pItems = [].slice.call(document.querySelectorAll("[data-parallax]"));
+  var ticking = false;
+  function applyParallax(){
+    var y = window.scrollY;
+    for(var i=0;i<pItems.length;i++){
+      var sp = parseFloat(pItems[i].getAttribute("data-speed")) || 0.3;
+      pItems[i].style.transform = "translate3d(0," + (y * sp) + "px,0)";
+    }
+    ticking = false;
+  }
+  if(!reduce){
+    window.addEventListener("scroll", function(){
+      if(!ticking){ window.requestAnimationFrame(applyParallax); ticking = true; }
+    }, {passive:true});
+    applyParallax();
+  }
+
+  /* --- Reveal on scroll --- */
+  var reveals = [].slice.call(document.querySelectorAll(".reveal"));
+  if("IntersectionObserver" in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, {threshold:0.12, rootMargin:"0px 0px -8% 0px"});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  /* --- Quote form -> mailto --- */
+  var form = document.getElementById("quoteForm");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var g = function(id){ var el = document.getElementById(id); return el ? el.value.trim() : ""; };
+    var name = g("q-name"), phone = g("q-phone"), email = g("q-email"),
+        town = g("q-town"), service = g("q-service"), msg = g("q-msg");
+    var subject = "Inspection Request — " + (name || "New inquiry");
+    var body =
+      "New inspection request from the website:\n\n" +
+      "Name: " + name + "\n" +
+      "Phone: " + phone + "\n" +
+      "Email: " + email + "\n" +
+      "Town: " + town + "\n" +
+      "Service needed: " + service + "\n\n" +
+      "Details:\n" + msg + "\n";
+    window.location.href = "mailto:lvtermite@comcast.net?subject=" +
+      encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+
+  /* --- Footer year --- */
+  var yr = document.getElementById("year");
+  try { yr.textContent = new Date().getFullYear(); } catch(e){}
+})();
+</script>
+</body>
+</html>
